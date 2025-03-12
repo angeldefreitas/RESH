@@ -1,0 +1,190 @@
+import { StyleSheet } from 'react-native';
+import { colors, spacing, fontSize, borderRadius } from '../theme';
+
+export const addHabitStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: colors.black,
+  },
+  formContainer: {
+    padding: spacing.lg,
+  },
+  inputGroup: {
+    marginBottom: spacing.lg,
+  },
+  colorPaletteContainer: {
+    paddingVertical: spacing.sm,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+  },
+  emojiGridContainer: {
+    paddingVertical: spacing.sm,
+    height: 175, // Aumentado de 160px a 240px para mostrar todas las filas
+  },
+  colorItem: {
+    width: 40,
+    height: 40,
+    borderRadius: 8,
+    marginRight: spacing.sm,
+    marginBottom: spacing.sm,
+    borderWidth: 1,
+    borderColor: colors.grey.medium,
+  },
+  colorItemSelected: {
+    borderWidth: 3,
+    borderColor: colors.white,
+  },
+  emojiItem: {
+    width: 48,
+    height: 48,
+    borderRadius: 8,
+    margin: spacing.xs,
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.2)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+  },
+  emojiText: {
+    fontSize: 24,
+  },
+  emojiIcon: {
+    fontSize: 22,
+    marginHorizontal: spacing.sm,
+    color: colors.white,
+  },
+  previewContainer: {
+    marginTop: spacing.md,
+    padding: spacing.sm,
+    borderRadius: borderRadius.sm,
+    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.2)',
+  },
+  previewText: {
+    fontSize: fontSize.sm,
+    color: colors.white,
+    marginBottom: spacing.sm,
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+  },
+  previewItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: spacing.sm,
+    borderRadius: borderRadius.sm,
+    borderWidth: 1,
+  },
+  previewItemText: {
+    fontSize: fontSize.md,
+    marginLeft: spacing.sm,
+    fontWeight: 'bold',
+  },
+  previewEmoji: {
+    fontSize: 24,
+  },
+  colorPreviewContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: spacing.sm,
+  },
+  colorPreviewText: {
+    fontSize: fontSize.sm,
+    color: colors.white,
+  },
+  colorPreviewBox: {
+    width: 24,
+    height: 24,
+    borderRadius: 4,
+    marginLeft: spacing.sm,
+    borderWidth: 1,
+    borderColor: colors.grey.medium,
+  },
+  segmentedControl: {
+    flexDirection: 'row',
+    marginBottom: spacing.sm,
+    borderRadius: borderRadius.sm,
+    overflow: 'hidden',
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.2)',
+  },
+  segmentButton: {
+    flex: 1,
+    padding: spacing.sm,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderColor: 'transparent',
+    borderBottomWidth: 2,
+  },
+  segmentButtonActive: {
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+  },
+  segmentButtonText: {
+    color: colors.white,
+    fontSize: fontSize.sm,
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+  },
+  label: {
+    fontSize: fontSize.md,
+    fontWeight: 'bold',
+    marginBottom: spacing.xs,
+    color: colors.white,
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+  },
+  inputWrapper: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    borderRadius: borderRadius.sm,
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.2)',
+  },
+  inputIcon: {
+    padding: spacing.sm,
+    color: colors.white,
+  },
+  input: {
+    flex: 1,
+    padding: spacing.md,
+    fontSize: fontSize.md,
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    borderRadius: borderRadius.sm,
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.2)',
+    color: colors.white,
+  },
+  textArea: {
+    height: 120,
+    textAlignVertical: 'top',
+  },
+  button: {
+    backgroundColor: colors.primary,
+    padding: spacing.md,
+    borderRadius: borderRadius.sm,
+    alignItems: 'center',
+    marginTop: spacing.md,
+    borderWidth: 1,
+    borderColor: colors.black,
+  },
+  buttonText: {
+    color: colors.white,
+    fontWeight: 'bold',
+    fontSize: fontSize.md,
+    letterSpacing: 1,
+    textTransform: 'uppercase',
+  },
+  cancelButton: {
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.2)',
+    marginTop: spacing.md,
+  },
+  cancelButtonText: {
+    color: colors.white,
+    letterSpacing: 1,
+    textTransform: 'uppercase',
+  },
+});
